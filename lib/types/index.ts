@@ -1,5 +1,5 @@
 export {};
-interface WebApp {
+type WebApp = {
     MainButton: {
         text: string;
         color: string;
@@ -54,12 +54,12 @@ interface WebApp {
     };
     BackButton: {
         isVisible: boolean;
-        onClick: () => void;
-        offClick: () => void;
+        onClick: (onClick?: () => void) => void;
+        offClick: (offClick?: () => void) => void;
         show: () => void;
         hide: () => void;
     };
-}
+};
 declare global {
     interface Window {
         Telegram: {
