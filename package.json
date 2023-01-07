@@ -1,0 +1,30 @@
+{
+  "name": "telegram-web-app-bots",
+  "version": "0.0.1",
+  "description": "a way to create a telegram web app bot",
+  "author": "Bereket",
+  "license": "ISC",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.26",
+    "react": "^18.2.0",
+    "rollup": "^3.9.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
+}
