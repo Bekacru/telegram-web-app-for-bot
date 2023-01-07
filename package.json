@@ -1,5 +1,5 @@
 {
-  "name": "telegram-web-app-bots",
+  "name": "@bekacru/telegram-bot-web-app",
   "version": "0.0.1",
   "description": "a way to create a telegram web app bot",
   "author": "Bereket",
@@ -26,5 +26,8 @@
   },
   "dependencies": {
     "tslib": "^2.4.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/telegram-bot-web-app"
   }
 }

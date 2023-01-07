@@ -1,3 +1,4 @@
+import { defineConfig } from 'rollup';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
@@ -5,7 +6,7 @@ import dts from 'rollup-plugin-dts';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const packageJson = require('./package.json');
-export default [
+export default defineConfig([
     {
         input: 'src/index.ts',
         output: [
@@ -31,4 +32,4 @@ export default [
         output: [{ file: 'dist/index.d.ts', format: 'esm' }],
         plugins: [dts()],
     },
-];
+]);
