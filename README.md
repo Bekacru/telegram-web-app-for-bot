@@ -1,4 +1,4 @@
-## telegram-web-app-bot-react Documentation 
+## Telegram Web App For Bots
 
 telegram-web-app-bot is a small npm library designed to make it easy to build a Telegram web app for bots, it provides types with custom support for React components.  
 
