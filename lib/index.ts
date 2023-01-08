@@ -1,1 +1,1 @@
-export * from './vanilla';
+export const Telegram = window.Telegram.WebApp;

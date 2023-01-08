@@ -1,8 +1,8 @@
 {
-  "name": "telegram-bot-web-app",
+  "name": "telegram-web-app-for-bot",
   "version": "0.0.1",
   "description": "a way to create a telegram web app bot",
-  "author": "Bereket",
+  "author": "Bereket Engida",
   "license": "ISC",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
@@ -41,9 +41,5 @@
   "peerDependencies": {
     "react": "^18.2.0"
   },
-  "type": "module",
-  "dependencies": {
-    "solid-js": "^1.6.8",
-    "ts-alias": "^0.0.6"
-  }
+  "type": "module"
 }
