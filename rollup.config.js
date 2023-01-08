@@ -5,7 +5,6 @@ import typescript from 'rollup-plugin-typescript2';
 import replace from '@rollup/plugin-replace';
 import { terser } from 'rollup-plugin-terser';
 import { createRequire } from 'node:module';
-import { babel } from '@rollup/plugin-babel';
 import { getFolders } from './scripts/buildUtils.js';
 import generatePackageJson from 'rollup-plugin-generate-package-json';
 
@@ -24,7 +23,6 @@ const plugins = [
         useTsconfigDeclarationDir: true,
     }),
     terser(),
-    babel({ babelHelpers: 'bundled' }),
 ];
 const subfolderPlugins = (folderName) => [
     ...plugins,

@@ -14,6 +14,7 @@
         "rootDir": "lib",
         // stricter type-checking for stronger correctness. Recommended by TS
         "strict": true,
+
         // linter checks for common issues
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
@@ -32,20 +33,19 @@
         "forceConsistentCasingInFileNames": true,
         // `tsdx build` ignores this option, but it is commonly used when type-checking separately with `tsc`
         "noEmit": true,
-        "noImplicitAny": true,
-
-        "plugins": [
-            {
-                "transform": "@zerollup/ts-transform-paths",
-                "exclude": ["*"]
-            }
-        ],
-        "baseUrl": ".",
-        "paths": {
-            "*": ["node_modules/*"],
-            "#comps": ["lib/*"],
-            "#react/*": ["lib/react/*"]
-        }
+        "noImplicitAny": true
+        // "plugins": [
+        //     {
+        //         "transform": "@zerollup/ts-transform-paths",
+        //         "exclude": ["*"]
+        //     }
+        // ],
+        // "baseUrl": ".",
+        // "paths": {
+        //     "*": ["node_modules/*"],
+        //     "@comps": ["lib/*"],
+        //     "@react-components/*": ["lib/react-components/*"]
+        // }
     },
     "include": ["lib/**/*"],
     "exclude": ["node_modules", "build"]

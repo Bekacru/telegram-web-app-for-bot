@@ -1,15 +1,15 @@
 export {};
-type WebApp = {
+export type WebApp = {
     MainButton: {
-        text: string;
-        color: string;
-        textColor: string;
-        isVisible: boolean;
-        isActive: boolean;
+        text?: string;
+        color?: string;
+        textColor?: string;
+        isVisible?: boolean;
+        isActive?: boolean;
         isProgressVisible: boolean;
         setText: (text: string) => void;
-        onClick: (callback: () => void) => void;
-        offClick: (callback: () => void) => void;
+        onClick: (func: Function) => void;
+        offClick: (func: Function) => void;
         show: () => void;
         hide: () => void;
         enable: () => void;
@@ -17,11 +17,11 @@ type WebApp = {
         showProgress: (leaveActive: boolean) => void;
         hideProgress: () => void;
         setParams: (
-            text: string,
-            color: string,
-            text_color: string,
-            is_active: string,
-            is_visible: string
+            text?: string,
+            color?: string,
+            text_color?: string,
+            is_active?: boolean,
+            is_visible?: boolean
         ) => void;
     };
     close(): void;
